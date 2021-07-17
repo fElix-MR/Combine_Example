@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDEC2EDE2690500C0091872F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2EDD2690500C0091872F /* AppDelegate.swift */; };
+		BDEC2EE02690500C0091872F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2EDF2690500C0091872F /* SceneDelegate.swift */; };
+		BDEC2EE22690500C0091872F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2EE12690500C0091872F /* MainViewController.swift */; };
+		BDEC2EE52690500C0091872F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEC2EE32690500C0091872F /* Main.storyboard */; };
+		BDEC2EE7269050110091872F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEC2EE6269050110091872F /* Assets.xcassets */; };
+		BDEC2EEA269050110091872F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEC2EE8269050110091872F /* LaunchScreen.storyboard */; };
+		BDEC2EF5269050120091872F /* Example_DebounceAndThrottleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2EF4269050120091872F /* Example_DebounceAndThrottleTests.swift */; };
+		BDEC2F00269050120091872F /* Example_DebounceAndThrottleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2EFF269050120091872F /* Example_DebounceAndThrottleUITests.swift */; };
+		BDEC2F0E2690538C0091872F /* DebounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2F0D2690538C0091872F /* DebounceViewController.swift */; };
+		BDEC2F10269053980091872F /* ThrottleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2F0F269053980091872F /* ThrottleViewController.swift */; };
+		BDEC2F122690585C0091872F /* DebounceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2F112690585C0091872F /* DebounceViewModel.swift */; };
+		BDEC2F15269168E30091872F /* ThrottleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC2F14269168E20091872F /* ThrottleViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDEC2EF1269050120091872F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDEC2ED22690500C0091872F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDEC2ED92690500C0091872F;
+			remoteInfo = Example_DebounceAndThrottle;
+		};
+		BDEC2EFC269050120091872F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDEC2ED22690500C0091872F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDEC2ED92690500C0091872F;
+			remoteInfo = Example_DebounceAndThrottle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDEC2EDA2690500C0091872F /* Example_DebounceAndThrottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example_DebounceAndThrottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEC2EDD2690500C0091872F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDEC2EDF2690500C0091872F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDEC2EE12690500C0091872F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDEC2EE42690500C0091872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDEC2EE6269050110091872F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDEC2EE9269050110091872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDEC2EEB269050110091872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEC2EF0269050120091872F /* Example_DebounceAndThrottleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Example_DebounceAndThrottleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEC2EF4269050120091872F /* Example_DebounceAndThrottleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_DebounceAndThrottleTests.swift; sourceTree = "<group>"; };
+		BDEC2EF6269050120091872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEC2EFB269050120091872F /* Example_DebounceAndThrottleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Example_DebounceAndThrottleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEC2EFF269050120091872F /* Example_DebounceAndThrottleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_DebounceAndThrottleUITests.swift; sourceTree = "<group>"; };
+		BDEC2F01269050120091872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEC2F0D2690538C0091872F /* DebounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DebounceViewController.swift; path = ../DebounceViewController.swift; sourceTree = "<group>"; };
+		BDEC2F0F269053980091872F /* ThrottleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleViewController.swift; sourceTree = "<group>"; };
+		BDEC2F112690585C0091872F /* DebounceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DebounceViewModel.swift; path = ../DebounceViewModel.swift; sourceTree = "<group>"; };
+		BDEC2F14269168E20091872F /* ThrottleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDEC2ED72690500C0091872F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EED269050120091872F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EF8269050120091872F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDEC2ED12690500C0091872F = {
+			isa = PBXGroup;
+			children = (
+				BDEC2EDC2690500C0091872F /* Example_DebounceAndThrottle */,
+				BDEC2EF3269050120091872F /* Example_DebounceAndThrottleTests */,
+				BDEC2EFE269050120091872F /* Example_DebounceAndThrottleUITests */,
+				BDEC2EDB2690500C0091872F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDEC2EDB2690500C0091872F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2EDA2690500C0091872F /* Example_DebounceAndThrottle.app */,
+				BDEC2EF0269050120091872F /* Example_DebounceAndThrottleTests.xctest */,
+				BDEC2EFB269050120091872F /* Example_DebounceAndThrottleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDEC2EDC2690500C0091872F /* Example_DebounceAndThrottle */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2EDD2690500C0091872F /* AppDelegate.swift */,
+				BDEC2EDF2690500C0091872F /* SceneDelegate.swift */,
+				BDEC2EE12690500C0091872F /* MainViewController.swift */,
+				BDEC2EE32690500C0091872F /* Main.storyboard */,
+				BDEC2EE6269050110091872F /* Assets.xcassets */,
+				BDEC2EE8269050110091872F /* LaunchScreen.storyboard */,
+				BDEC2EEB269050110091872F /* Info.plist */,
+				BDEC2F132690586D0091872F /* Debounce */,
+				BDEC2F16269168E60091872F /* Throttle */,
+			);
+			path = Example_DebounceAndThrottle;
+			sourceTree = "<group>";
+		};
+		BDEC2EF3269050120091872F /* Example_DebounceAndThrottleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2EF4269050120091872F /* Example_DebounceAndThrottleTests.swift */,
+				BDEC2EF6269050120091872F /* Info.plist */,
+			);
+			path = Example_DebounceAndThrottleTests;
+			sourceTree = "<group>";
+		};
+		BDEC2EFE269050120091872F /* Example_DebounceAndThrottleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2EFF269050120091872F /* Example_DebounceAndThrottleUITests.swift */,
+				BDEC2F01269050120091872F /* Info.plist */,
+			);
+			path = Example_DebounceAndThrottleUITests;
+			sourceTree = "<group>";
+		};
+		BDEC2F132690586D0091872F /* Debounce */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2F0D2690538C0091872F /* DebounceViewController.swift */,
+				BDEC2F112690585C0091872F /* DebounceViewModel.swift */,
+			);
+			path = Debounce;
+			sourceTree = "<group>";
+		};
+		BDEC2F16269168E60091872F /* Throttle */ = {
+			isa = PBXGroup;
+			children = (
+				BDEC2F0F269053980091872F /* ThrottleViewController.swift */,
+				BDEC2F14269168E20091872F /* ThrottleViewModel.swift */,
+			);
+			path = Throttle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDEC2ED92690500C0091872F /* Example_DebounceAndThrottle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDEC2F04269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottle" */;
+			buildPhases = (
+				BDEC2ED62690500C0091872F /* Sources */,
+				BDEC2ED72690500C0091872F /* Frameworks */,
+				BDEC2ED82690500C0091872F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example_DebounceAndThrottle;
+			productName = Example_DebounceAndThrottle;
+			productReference = BDEC2EDA2690500C0091872F /* Example_DebounceAndThrottle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDEC2EEF269050120091872F /* Example_DebounceAndThrottleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDEC2F07269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottleTests" */;
+			buildPhases = (
+				BDEC2EEC269050120091872F /* Sources */,
+				BDEC2EED269050120091872F /* Frameworks */,
+				BDEC2EEE269050120091872F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDEC2EF2269050120091872F /* PBXTargetDependency */,
+			);
+			name = Example_DebounceAndThrottleTests;
+			productName = Example_DebounceAndThrottleTests;
+			productReference = BDEC2EF0269050120091872F /* Example_DebounceAndThrottleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDEC2EFA269050120091872F /* Example_DebounceAndThrottleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDEC2F0A269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottleUITests" */;
+			buildPhases = (
+				BDEC2EF7269050120091872F /* Sources */,
+				BDEC2EF8269050120091872F /* Frameworks */,
+				BDEC2EF9269050120091872F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDEC2EFD269050120091872F /* PBXTargetDependency */,
+			);
+			name = Example_DebounceAndThrottleUITests;
+			productName = Example_DebounceAndThrottleUITests;
+			productReference = BDEC2EFB269050120091872F /* Example_DebounceAndThrottleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDEC2ED22690500C0091872F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BDEC2ED92690500C0091872F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BDEC2EEF269050120091872F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BDEC2ED92690500C0091872F;
+					};
+					BDEC2EFA269050120091872F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BDEC2ED92690500C0091872F;
+					};
+				};
+			};
+			buildConfigurationList = BDEC2ED52690500C0091872F /* Build configuration list for PBXProject "Example_DebounceAndThrottle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDEC2ED12690500C0091872F;
+			productRefGroup = BDEC2EDB2690500C0091872F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDEC2ED92690500C0091872F /* Example_DebounceAndThrottle */,
+				BDEC2EEF269050120091872F /* Example_DebounceAndThrottleTests */,
+				BDEC2EFA269050120091872F /* Example_DebounceAndThrottleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDEC2ED82690500C0091872F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDEC2EEA269050110091872F /* LaunchScreen.storyboard in Resources */,
+				BDEC2EE7269050110091872F /* Assets.xcassets in Resources */,
+				BDEC2EE52690500C0091872F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EEE269050120091872F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EF9269050120091872F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDEC2ED62690500C0091872F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDEC2EE22690500C0091872F /* MainViewController.swift in Sources */,
+				BDEC2EDE2690500C0091872F /* AppDelegate.swift in Sources */,
+				BDEC2EE02690500C0091872F /* SceneDelegate.swift in Sources */,
+				BDEC2F15269168E30091872F /* ThrottleViewModel.swift in Sources */,
+				BDEC2F122690585C0091872F /* DebounceViewModel.swift in Sources */,
+				BDEC2F0E2690538C0091872F /* DebounceViewController.swift in Sources */,
+				BDEC2F10269053980091872F /* ThrottleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EEC269050120091872F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDEC2EF5269050120091872F /* Example_DebounceAndThrottleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEC2EF7269050120091872F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDEC2F00269050120091872F /* Example_DebounceAndThrottleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDEC2EF2269050120091872F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDEC2ED92690500C0091872F /* Example_DebounceAndThrottle */;
+			targetProxy = BDEC2EF1269050120091872F /* PBXContainerItemProxy */;
+		};
+		BDEC2EFD269050120091872F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDEC2ED92690500C0091872F /* Example_DebounceAndThrottle */;
+			targetProxy = BDEC2EFC269050120091872F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDEC2EE32690500C0091872F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDEC2EE42690500C0091872F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDEC2EE8269050110091872F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDEC2EE9269050110091872F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDEC2F02269050120091872F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDEC2F03269050120091872F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDEC2F05269050120091872F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDEC2F06269050120091872F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDEC2F08269050120091872F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_DebounceAndThrottle.app/Example_DebounceAndThrottle";
+			};
+			name = Debug;
+		};
+		BDEC2F09269050120091872F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example_DebounceAndThrottle.app/Example_DebounceAndThrottle";
+			};
+			name = Release;
+		};
+		BDEC2F0B269050120091872F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example_DebounceAndThrottle;
+			};
+			name = Debug;
+		};
+		BDEC2F0C269050120091872F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW2B9C7ASY;
+				INFOPLIST_FILE = Example_DebounceAndThrottleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felix.Example-DebounceAndThrottleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example_DebounceAndThrottle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDEC2ED52690500C0091872F /* Build configuration list for PBXProject "Example_DebounceAndThrottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDEC2F02269050120091872F /* Debug */,
+				BDEC2F03269050120091872F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDEC2F04269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDEC2F05269050120091872F /* Debug */,
+				BDEC2F06269050120091872F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDEC2F07269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDEC2F08269050120091872F /* Debug */,
+				BDEC2F09269050120091872F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDEC2F0A269050120091872F /* Build configuration list for PBXNativeTarget "Example_DebounceAndThrottleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDEC2F0B269050120091872F /* Debug */,
+				BDEC2F0C269050120091872F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDEC2ED22690500C0091872F /* Project object */;
+}
