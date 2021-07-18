@@ -10,8 +10,8 @@ import Combine
 
 final class ThrottleViewModel {
 
-  var touchEvent = PassthroughSubject<Int, Never>()
-  @Published var count = 0
+  private(set) var touchEvent = PassthroughSubject<Int, Never>()
+  @Published private(set) var count = 0
   
   private var cancellables: Set<AnyCancellable> = []
   
