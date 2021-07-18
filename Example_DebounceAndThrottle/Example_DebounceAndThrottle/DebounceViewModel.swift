@@ -10,7 +10,7 @@ import Combine
 
 final class DebounceViewModel {
   
-  var text = CurrentValueSubject<String?, Never>(nil)
+  var text = PassthroughSubject<String?, Never>()
   var result = PassthroughSubject<String, Never>()
   
   var cancellables: Set<AnyCancellable> = []
